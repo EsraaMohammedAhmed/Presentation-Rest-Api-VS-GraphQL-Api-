@@ -2,8 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <!-- <title>GraphQL with Sangria</title> -->
-        <title> Rest  Apis VS GraphQL</title>
+        <title> Rest  Apis VS GraphQL </title>
         <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
         <meta name="author" content="Oleg Ilyenko">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -227,39 +226,29 @@
                 <section>
                     <img src="assets/img/data-requirements.svg">
                 </section>
-
                 <section>
-                    <h2>Type System</h2>
-          
-                    <pre style="float: left; width: 60%"><code data-trim contenteditable class="javascript">
+                    <h2>Type System</h2><pre style="float: left; width: 60%"><code data-trim contenteditable class="javascript">
           type Picture {
             width: Int!
             height: Int!
             url: String
-          }
-                    </code></pre>
-          
-                    <pre style="float: left; width: 40%" class="fragment fade-in" data-fragment-index="3"><code data-trim contenteditable class="javascript">
+          }</code></pre>
+          <pre style="float: left; width: 40%" class="fragment fade-in" data-fragment-index="3"><code data-trim contenteditable class="javascript">
           type Query {
             product(id: Int!): Product
             products: [Product]
-          }
-                    </code></pre>
-          
-                    <pre style="float: left; width: 60%" class="fragment fade-in" data-fragment-index="1"><code data-trim contenteditable class="javascript">
+          }</code></pre>
+          <pre style="float: left; width: 60%" class="fragment fade-in" data-fragment-index="1"><code data-trim contenteditable class="javascript">
           interface Identifiable {
             id: String!
-          }
-                    </code></pre>
-          
+          }</code></pre>
                     <pre style="float: left; width: 60%" class="fragment fade-in" data-fragment-index="2"><code data-trim contenteditable class="javascript">
           type Product implements Identifiable {
             id: String!
             name: String!
             description: String
             picture(size: Int): Picture
-          }
-                    </code></pre>
+          } </code></pre>
                   </section>
           
                 <section>
@@ -448,17 +437,6 @@ val ProductType = deriveObjectType[Unit, Product]()
                 </section>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
         <script src="assets/offline/fonts.js"></script>
         <script src="https://use.typekit.net/jor2kyz.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
